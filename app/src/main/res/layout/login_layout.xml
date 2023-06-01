@@ -4,51 +4,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
+    android:background="@color/yellow_100"
     android:orientation="vertical"
     tools:context=".LoginActivity">
 
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:src="@drawable/logo" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Olá Bem vindo de volta!"
-        android:textSize="20sp" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/idLoginInput"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Seu endereço de email"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
 
-        app:endIconMode="clear_text"
-        app:startIconDrawable="@drawable/baseline_email">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/logo" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:inputType="textEmailAddress"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Olá Bem vindo de volta!"
+            android:textSize="20sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:hint="Seu endereço de email"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/baseline_email">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/idLoginInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/idSenhaInput"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Insira aqui a sua senha"
-        app:endIconMode="clear_text"
-        app:startIconDrawable="@drawable/baseline_lock">
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:inputType="textPassword"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:hint="Insira aqui a sua senha"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/baseline_lock">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/idSenhaInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
 
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticabold"
+            android:text="Não tem uma conta? Cadastre-se agora!"
+            android:textAlignment="textEnd"
+            android:textColor="@color/green_500" />
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnLogin"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Login" />
+
+            <Button
+                android:id="@+id/btnSair"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sair" />
+
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
