@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Inicio"
+        android:enabled="true"
+        android:icon="@drawable/baseline_home"
+        android:title="Inicio" />
+    <item
+        android:id="@+id/Coleta"
+        android:enabled="true"
+        android:icon="@drawable/baseline_place"
+        android:title="Coleta" />
+    <item
+        android:id="@+id/Loja"
+        android:enabled="true"
+        android:icon="@drawable/baseline_store"
+        android:title="Loja" />
+    <item
+        android:id="@+id/Projeto"
+        android:enabled="true"
+        android:icon="@drawable/baseline_emoji_people"
+        android:title="Nossa Causa" />
+</menu>
