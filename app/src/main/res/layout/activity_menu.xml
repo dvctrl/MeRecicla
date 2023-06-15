@@ -16,7 +16,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:strokeColor="@color/white"
-            android:backgroundTint="@color/green_100"
             android:layout_margin="10dp">
 
             <LinearLayout
@@ -29,49 +28,56 @@
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/user" />
+                    android:src="@drawable/perfil" />
 
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Olá Usuário" />
+                    android:orientation="vertical">
+                <TextView
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Olá, Amanda!" />
+                    <TextView
+                        android:textSize="15sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="O que podemos fazer por você hoje?" />
 
+
+                </LinearLayout>
 
             </LinearLayout>
 
 
         </com.google.android.material.card.MaterialCardView>
 
-        <com.google.android.material.card.MaterialCardView
+        <com.google.android.material.tabs.TabLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:strokeColor="@color/white"
-            android:backgroundTint="@color/green_100"
-            android:layout_margin="10dp">
+            android:layout_height="wrap_content">
 
-            <TextView
-                android:layout_width="match_parent"
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
                 android:text="Serviços"
-                android:layout_marginBottom="10dp"/>
+                />
 
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pontos de Retirada"
+                />
 
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contato"
+                />
 
-        </com.google.android.material.card.MaterialCardView>
-
-   <!--- <com.google.android.material.bottomnavigation.BottomNavigationView
-        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
-        android:id="@+id/bottom_navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:menu="@menu/menu_principal" />-->
+        </com.google.android.material.tabs.TabLayout>
 
 </LinearLayout>
 </LinearLayout>
 
-    <!-- <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottom_navigation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:menu="@menu/menu_principal" /> -->
